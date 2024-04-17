@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             String heightString = etHeight.getText().toString().trim();
             String weightString = etWeight.getText().toString().trim();
 
-            if (heightString.isEmpty() && weightString.isEmpty()) {
+            if (heightString.isEmpty() || weightString.isEmpty()) {
                 Toast.makeText(this, "키와 몸무게를 입력하세요", Toast.LENGTH_SHORT).show();
             } else {
                 double height = Double.parseDouble(heightString);
