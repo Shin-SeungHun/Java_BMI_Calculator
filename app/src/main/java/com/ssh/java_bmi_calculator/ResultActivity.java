@@ -56,7 +56,7 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     private double calcluateBmi(double height, double weight) {
-        return weight / ((height / 100) * (height / 100));
+        return Math.round(weight / ((height / 100) * (height / 100)));
     }
 
     private String statusBmi(double bmi) {
